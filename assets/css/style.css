@@ -361,14 +361,27 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  padding: 0 0 0 0;
-  background: #213b52;
-  background: linear-gradient(
-    180deg,
-    #213b52 0%,
-    rgb(33, 60, 84) 35%,
-    rgb(32, 69, 100) 100%
-  );
+  padding: 0 0;
+  height: 100vh;
+}
+
+#hero .carrousel {
+  height: 800px;
+  /* height: 100vh; */
+  /* height: 100%; */
+}
+
+#hero .carrousel .items {
+  height: 800px;
+}
+
+#hero .carrousel .items .img {
+  height: 100%;
+  overflow: hidden;
+}
+
+#hero .carrousel .items .img img {
+  height: 100%;
 }
 
 #hero h1 {
@@ -442,7 +455,7 @@ h6 {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-section {
+.section {
   padding: 60px 0;
   overflow: hidden;
 }
